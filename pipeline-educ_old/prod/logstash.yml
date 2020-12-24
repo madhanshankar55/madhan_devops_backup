@@ -1,0 +1,7 @@
+http.host: "0.0.0.0"
+path.data: /usr/share/logstash/data
+path.config: /usr/share/logstash/pipeline/*.conf
+path.logs: /var/log/logstash
+
+xpack.monitoring.elasticsearch.hosts: ["kfdcel02.hlcl.com:9200", "kfdcel03.hlcl.com:9200", "kfdcel04.hlcl.com:9200", "kfdcel05.hlcl.com:9200"]
+xpack.monitoring.elasticsearch.sniffing: true

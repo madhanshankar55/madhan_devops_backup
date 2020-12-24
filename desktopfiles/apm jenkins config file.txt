@@ -1,0 +1,8 @@
+/bin/docker rm -f ls-apim || true
+/bin/docker image rm -f kfdcel01.hlcl.com:5000/logstash-apim-deve:latest || true
+/bin/docker run -d --name ls-apim --network elastic -p 30201:5001 -p 30201:5001/udp -p 30202:5002 -p 30203:5003 --restart always --memory-reservation="512m" kfdcel01.hlcl.com:5000/logstash-apim-deve:latest
+
+
+/bin/docker rm -f ls-apim || true
+/bin/docker image rm -f kfdcel01.hlcl.com:5000/logstash-apim-test:latest || true
+/bin/docker run -d --name ls-apim --network elastic -p 30201:5001 -p 30201:5001/udp -p 30202:5002 -p 30203:5003 --restart always --memory-reservation="512m" kfdcel01.hlcl.com:5000/logstash-apim-test:latest

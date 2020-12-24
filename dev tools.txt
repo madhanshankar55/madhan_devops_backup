@@ -1,0 +1,35 @@
+DELETE metricbeat_kfdcel*-logs-7.6.2-2020.09.1*
+
+DELETE hlog-fis3-2020.09.1*
+
+DELETE hlog-edi-2020.09.0*
+
+DELETE hlog-edi-2020.09.1*
+
+DELETE hlog-apim-2020.09.0*
+
+DELETE hlog-apim-2020.09.1*
+
+GET _cat/indices 
+
+DELETE hlog-odm-2020.09.1*
+
+DELETE hlog-web-2020.09.1*
+
+DELETE hlog-fsd-2020.09.1*
+
+DELETE hlog-educ-2020.09.0*
+
+DELETE hlog-*-2020.09.1*
+
+DELETE container-logs-7.6.2-2020.09.1*
+
+GET hlog-edi-*/_settings
+PUT hlog-edi-*/_settings
+    {
+    "index": {
+    "blocks": {
+    "read_only_allow_delete": "false"
+    }
+    }
+    }

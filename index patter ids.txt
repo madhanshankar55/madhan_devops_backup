@@ -1,0 +1,129 @@
+{
+  "took" : 5,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 1,
+    "successful" : 1,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : {
+      "value" : 11,
+      "relation" : "eq"
+    },
+    "max_score" : 2.0329216,
+    "hits" : [
+      {
+        "_index" : ".kibana_2",
+        "_type" : "_doc",
+        "_id" : "fis3-wlp:index-pattern:86ee3840-c336-11e9-8d8a-51764ec80098",
+        "_score" : 2.0329216,
+        "_source" : {
+          "index-pattern" : {
+            "title" : "hlog-fis3-wlp-*"
+          }
+        }
+      },
+      {
+        "_index" : ".kibana_2",
+        "_type" : "_doc",
+        "_id" : "dashboard:index-pattern:0b7826d0-435b-11ea-965a-2d6a31b1bb8d",
+        "_score" : 2.0329216,
+        "_source" : {
+          "index-pattern" : {
+            "title" : "hlog-dashboard-*"
+          }
+        }
+      },
+      {
+        "_index" : ".kibana_2",
+        "_type" : "_doc",
+        "_id" : "horu:index-pattern:c392da00-434f-11ea-965a-2d6a31b1bb8d",
+        "_score" : 2.0329216,
+        "_source" : {
+          "index-pattern" : {
+            "title" : "hlog-horu-*"
+          }
+        }
+      },
+      {
+        "_index" : ".kibana_2",
+        "_type" : "_doc",
+        "_id" : "fis3:index-pattern:5299c060-4364-11ea-965a-2d6a31b1bb8d",
+        "_score" : 2.0329216,
+        "_source" : {
+          "index-pattern" : {
+            "title" : "hlog-fis3-*"
+          }
+        }
+      },
+      {
+        "_index" : ".kibana_2",
+        "_type" : "_doc",
+        "_id" : "mpf:index-pattern:00a152c0-49a7-11ea-b11a-25037660a886",
+        "_score" : 2.0329216,
+        "_source" : {
+          "index-pattern" : {
+            "title" : "hlog-mpf-*"
+          }
+        }
+      },
+      {
+        "_index" : ".kibana_2",
+        "_type" : "_doc",
+        "_id" : "fis3:index-pattern:dfff1860-5c69-11ea-b11a-25037660a886",
+        "_score" : 2.0329216,
+        "_source" : {
+          "index-pattern" : {
+            "title" : "hlog-apim-*"
+          }
+        }
+      },
+      {
+        "_index" : ".kibana_2",
+        "_type" : "_doc",
+        "_id" : "index-pattern:apm-*",
+        "_score" : 2.0329216,
+        "_source" : {
+          "index-pattern" : {
+            "title" : "apm-*"
+          }
+        }
+      },
+      {
+        "_index" : ".kibana_2",
+        "_type" : "_doc",
+        "_id" : "fis3:index-pattern:a0f88e70-58aa-11ea-b11a-25037660a886",
+        "_score" : 2.0329216,
+        "_source" : {
+          "index-pattern" : {
+            "title" : "logstash-fis3*"
+          }
+        }
+      },
+      {
+        "_index" : ".kibana_2",
+        "_type" : "_doc",
+        "_id" : "edi:index-pattern:00ecc6a0-5c5e-11ea-b11a-25037660a886",
+        "_score" : 2.0329216,
+        "_source" : {
+          "index-pattern" : {
+            "title" : "hlog-edi*"
+          }
+        }
+      },
+      {
+        "_index" : ".kibana_2",
+        "_type" : "_doc",
+        "_id" : "apim:index-pattern:036575b0-5c88-11ea-b11a-25037660a886",
+        "_score" : 2.0329216,
+        "_source" : {
+          "index-pattern" : {
+            "title" : "hlog-apim-*"
+          }
+        }
+      }
+    ]
+  }
+}

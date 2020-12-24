@@ -1,0 +1,54 @@
+/bin/docker rm -f ls-fis3 || true
+/bin/docker image rm -f kfdcel01.hlcl.com:5000/logstash-fis3-test:latest || true
+/bin/docker run -d --name ls-fis3 -p 30301:5001 -p 30301:5001/udp -p 30302:5002 -p 30302:5002/udp --restart always --memory-reservation="512m" kfdcel01.hlcl.com:5000/logstash-fis3-test:latest
+
+
+
+
+
+/bin/docker rm -f ls-apim || true
+/bin/docker image rm -f kfdcel01.hlcl.com:5000/logstash-apim-test:latest || true
+/bin/docker run -dit --name ls-apim --network elastic -p 30201:5001 -p 30201:5001/udp -p 30202:5002 --restart always --memory-reservation="512m" kfdcel01.hlcl.com:5000/logstash-apim-test:latest
+
+
+
+
+/bin/echo -e "\n\n\n\n"
+/bin/docker ps -a | grep ls-apim
+/bin/echo -e "\n\n\n\n"
+/bin/docker logs -f ls-apim
+
+
+
+
+/bin/echo -e "\n\n\n\n"
+/bin/docker ps -a |grep ls-fis3
+/bin/echo -e "\n\n\n\n"
+/bin/docker logs ls-fis3
+
+
+Jagemann, Heiko
+Knickrehm, Lars
+Kolloge, Niklas
+
+Gosch, Lasse
+Keckstein, Jens
+jagemann, Heiko
+knickrehm, Lars
+Kolloge, Niklas
+Neumann, Olaf
+Tegtmeyer, Daniel
+Zielnski, Dieter
+
+
+
+036575b0-5c88-11ea-b11a-25037660a886
+
+457e31b0-020d-11ea-8d8a-51764ec80098
+
+80c28760-4431-11ea-965a-2d6a31b1bb8d
+
+
+00a152c0-49a7-11ea-b11a-25037660a886
+
+

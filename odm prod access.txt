@@ -1,0 +1,7 @@
+/bin/echo -e "\n\n\n\n"
+/bin/docker ps -a |grep ls-odm
+/bin/echo -e "\n\n\n\n"
+/bin/docker logs ls-odm | tail -n 30
+# /bin/docker logs ls-odm | grep "logstash.codecs.plain" | tail -n 500 
+
+lmnsd_ptcp.so

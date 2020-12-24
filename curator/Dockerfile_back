@@ -1,0 +1,13 @@
+FROM python:3.6-alpine
+
+#ARG CURATOR_VERSION
+
+#RUN pip install  elasticsearch-curator==${CURATOR_VERSION} &&\
+#RUN pip install elasticsearch-curator &&\
+#    rm -rf /var/cache/apk/*
+RUN pip install elasticsearch-curator
+COPY ./config/ /config
+
+RUN /usr/bin/crontab /config/crontab.txt
+
+CMD ["/usr/sbin/crond","-f"]

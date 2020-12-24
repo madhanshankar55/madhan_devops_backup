@@ -1,0 +1,23 @@
+FROM docker.elastic.co/beats/metricbeat:7.8.1
+COPY metricbeat.yml /usr/share/metricbeat/metricbeat.yml
+USER root
+RUN chown root:metricbeat /usr/share/metricbeat/metricbeat.yml
+USER metricbeat
+
+ 511  logger -T -n 194.9.161.143 -P 31201 "test" --prod
+ 194.9.161.168 --dev
+ 194.9.161.169 -- test
+
+
+docker run -d --log-opt max-size=20m --log-opt max-file=3 --name=hlog-filebeat -p 5044:5044 -v /var/lib/docker/containers:/var/lib/docker/containers/ -v /var/run/docker.sock:/var/run/docker.sock filebeat:7.6.2
+
+
+
+
+
+
+
+docker run -d --name=metricbeat --mount type=bind,source=/proc,target=/hostfs/proc,readonly --mount type=bind,source=/sys/fs/cgroup,target=/hostfs/sys/fs/cgroup,readonly --mount type=bind,source=/,target=/hostfs,readonly --net=host metricbeat:7.6.2 -e -system.hostfs=/hostfs
+
+docker run -d --name=aem -v /home/hl/docker/71logs/:/var/log/apache2/ -v /var/run/docker.sock:/var/run/docker.sock aem:71
+

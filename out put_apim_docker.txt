@@ -1,0 +1,14 @@
+[docker@kfdct070 ~]$ docker exec -it ls-apim /bin/bash
+[root@1db0fc6312df logstash]# cd /usr/share/logstash/config/liberty_logstash_template_ibm.json
+bash: cd: /usr/share/logstash/config/liberty_logstash_template_ibm.json: No such file or directory
+[root@1db0fc6312df logstash]# cd /usr/share/logstash/config/
+[root@1db0fc6312df config]# ls
+jvm.options  log4j2.properties  logstash-sample.conf  logstash.yml  pipelines.yml  startup.options
+[root@1db0fc6312df config]# ll
+total 24
+-rw-rw-r-- 1 logstash root 2019 Mar 26 08:51 jvm.options
+-rw-r--r-- 1 logstash root  579 Mar 26 08:51 log4j2.properties
+-rw-rw-r-- 1 logstash root  342 Mar 26 08:51 logstash-sample.conf
+-rw-rw-r-- 1 root     root  234 Jun 23 13:55 logstash.yml
+-rw-r--r-- 1 logstash root  286 Mar 26 08:51 pipelines.yml
+-rw-rw-r-- 1 logstash root 1696 Mar 26 08:51 startup.options
